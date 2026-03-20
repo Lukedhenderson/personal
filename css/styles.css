@@ -61,7 +61,13 @@ body {
     width: 100%;
 }
 
-.artist-name {
+.name-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
     font-size: 0.95rem;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -73,6 +79,29 @@ body {
 
     transform: translateY(2px);
     white-space: nowrap;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.git-hub-link {
+    display: inline-block;
+}
+
+.git-hub-link a {
+    font-size: 0.85rem;
+    color: #4a9eff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.git-hub-link a:hover {
+    opacity: 1;
 }
 
 .art-wrapper {
